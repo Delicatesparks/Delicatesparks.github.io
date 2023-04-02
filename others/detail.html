@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Detail页</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0
+			}
+
+			body {
+				background: url(../img/backgroundmain2.png);
+				background-size: 100% 100%;
+				background-repeat: repeat-x;
+				margin-left: 100px;
+				margin-right: 100px;
+
+			}
+
+			html {
+
+				background：linear-gradient(#101745 20%, #0A293B 60%, #0C3C2C 80%);
+			}
+
+
+			.jumbotron {
+				background: url(../img/n.jpg);
+				text-align: right;
+				height: 400px;
+				margin-top: 75px;
+				margin-bottom: 60px;
+				color: white;
+
+
+			}
+
+			.table {
+
+				/*border: 1px white dotted ;*/
+				/*border-width:1 0 0 1;*/
+				background-color: rgba(5, 5, 3, 0.5);
+				/*width: 1800px;*/
+				height: 200px;
+				width: 1000px;
+				maigin-top: 100px;
+
+			}
+
+			/*表格偶数行*/
+			.table tr:nth-child(even) {
+				background-color: rgba(11, 57, 47, 0.5);
+			}
+
+
+
+
+			#all {
+
+				font-family: "微软雅黑体";
+				color: white;
+				width: 1000px;
+				margin-top: 25px;
+			}
+
+			#all.container {
+				max-width: 100%;
+				display: block;
+			}
+
+			#container2 {
+				width: 600px;
+				height: 600px;
+				border: 1px solid #999;
+			}
+
+			/*上侧导航条*/
+			#head {
+				/*background:#0D1546;*/
+
+				margin-top: 0 auto;
+				font-style: normal;
+				font-size: large;
+				color: green;
+
+				font-weight: 700px;
+
+
+			}
+
+
+
+			#footer {
+				height: 186px;
+				margin-top: -20px;
+			}
+
+			#footer p {
+				text-align: center;
+				padding-top: 140px;
+				color: #CCC
+			}
+			}
+		</style>
+		<script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=gUtlu41QBPiTzLSaWF4k1lx2iy65yvre"></script>
+
+
+
+	</head>
+	<body>
+		<div id="all" class="container">
+
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation" id="head">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+							 aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+
+							<a class="navbar-brand" href="../index.html">首页</a>
+							</a>
+						</div>
+
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active">
+									<a href="#">电影详情</a>
+								</li>
+								<li>
+									<a href="moviePlay.html">影视播放</a>
+								</li>
+								<li>
+									<a href=" list.html">热门电影 </a> </li>
+							</ul>
+							<form class="navbar-form navbar-left" role="search">
+								<div class="form-group">
+									<input type="text" class="form-control" />
+								</div> <button type="submit" class="btn btn-default">搜索 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+								</button>
+							</form>
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="register.html">登陆/注册</a>
+								</li>
+
+							</ul>
+						</div>
+
+					</nav>
+					<!-- 巨幕-->
+					<div class="jumbotron">
+
+						<h1>
+							隐入尘烟
+						</h1>
+						<p style="text-indent:2em;">
+							影片讲述西北农村，两个被各自家庭抛弃的孤独个体，在日复一日的耕耘中相濡以沫的故事，武仁林与海清展现了一对底层农民夫妇从陌生到熟悉，从相知到相守的心路历程。
+						</p>
+						<p>
+							<a class="btn btn-primary btn-large" href="./moviePlay.html">立刻播放</a>
+						</p>
+
+					</div>
+				</div>
+			</div>
+			<!--<div class="tabbable" id="tabs-872727">-->
+			<div class="row clearfix">
+
+				<div class="col-md-8 ">
+					<div class="tabbable" id="tabs-872727">
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#panel-102395" data-toggle="tab" style="color:grey;font-size:medium">剧情介绍</a>
+							</li>
+							<li>
+								<a href="#container2" data-toggle="tab" style="color:grey;font-size:medium">查看拍摄地</a>
+							</li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="panel-102395">
+
+
+								<p style="margin-top: 20px;font-size: large ;text-indent:2em;">
+									曹贵英（海清饰）常年在哥哥嫂子家过着被人嫌弃的生活，住在风吹雨淋的木棚，气虚体寒，一条腿还瘸了，干不了重体力活。她患有尿路疾病，不分时间场合都会小便失禁。由于没有生育能力，她在农村的婚恋市场处于食物链底层。贵英经哥哥嫂子的“安排”被介绍给邻村的大龄单身汉马有铁（武仁林饰）。
+								</p>
+								<p style="font-size: large;text-indent:2em;">
+									马有铁排行老四，哥哥马有金、马有银都已经去世，尽管三哥马有铜日子过得不错，但他只能寄居在村里被弃置的空屋中，守着一头驴子过日子，被村里人笑称为“没有比你更穷的”。和贵英结婚之后，马有铁的日子一下子充满了盼头。他并不嫌弃贵英身体的疾病和残疾，勤奋种地，甚至还养了一窝鸡，想攒钱给贵英治病。村里收粮的老板得了怪病，需要大量输血。但是全村是“熊猫血型”的偏偏只有马有铁。为了让老板病好起来，还上拖欠全村人的粮钱，善良的马有铁开始给老板无偿献血。又要献血又要种地，马有铁的日子十分辛苦。
+								</p>
+								<p style="font-size: large;text-indent:2em;">
+									祸不单行，村子里开始有偿拆除空屋，马有铁和贵英即将无家可归。他决心自己盖房子，一砖一瓦地，慢慢给自己和贵英盖成了一间平房，贴上结婚时候别人送的双喜贴花，期盼日子好起来。一点一滴贵英都看在眼里，渐渐对这个安排的丈夫产生了依恋和信赖。尽管她体弱多病，并不能帮马有铁干多少活，甚至还因此偶尔被他责骂，但是婚后的生活是她一生中鲜少享受的平静。好景不长，有一天生病的贵英去田头给马有铁送饭，一时头晕掉进河里死了。丧妻的马有铁如遭雷击，他将何去何从…
+								</p>
+								<p style="font-size: large;text-indent:2em;">
+									西北大地种不出玫瑰，小麦印花是我最汹涌的爱意！
+								</p>
+							</div>
+
+
+
+
+							<div class="tab-pane" id="container2">
+
+							</div>
+							<script type="text/javascript">
+								// 创建地图实例 
+								var map = new BMap.Map("container2");
+
+								// 创建点坐标 （）
+								var point = new BMap.Point(99.61793, 39.632028);
+
+								// 初始化地图，设置中心点坐标和地图级别 
+								map.centerAndZoom(point, 16);
+								map.enableScrollWheelZoom(true);
+								map.addControl(new BMap.NavigationControl());
+
+
+								//比例尺 ScaleControl 默认位于地图左下方，显示地图的比例关系
+								map.addControl(new BMap.ScaleControl());
+
+								//缩略地图 OverviewMapControl	默认位于地图右下方，是一个可折叠的缩略地图
+								map.addControl(new BMap.OverviewMapControl());
+
+								//地图类型	MapTypeControl	默认位于地图右上方
+								map.addControl(new BMap.MapTypeControl());
+								var opts = {
+									anchor: BMAP_ANCHOR_TOP_RIGHT, //位置
+									type: BMAP_NAVIGATION_CONTROL_SMALL //类型
+								}
+								map.addControl(new BMap.NavigationControl(opts));
+							</script>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 ">
+
+					<img src="../img/haibao.jpg" class="img-responsive" alt="" style="margin-top:20px ;padding:50px 50px 20px 40px;">
+
+					<p style="text-align:center; font-size:x-large;margin-top:0px;">隐入尘烟(2022)</p>
+
+
+
+				</div>
+			</div>
+			<!--</div>-->
+
+			<div class="row clearfix">
+				<!-- 幻灯片-->
+				<h3>剧照</h3>
+				<div class="carousel slide" id="carousel-149262" style="width:1000px;padding:40px 200px 40px 200px;">
+					<ol class="carousel-indicators">
+						<li data-slide-to="0" data-target="#carousel-149262">
+						</li>
+						<li data-slide-to="1" data-target="#carousel-149262" class="active">
+						</li>
+						<li data-slide-to="2" data-target="#carousel-149262">
+						</li>
+					</ol>
+					<div class="carousel-inner" id="mengban1">
+						<div class="item">
+							<img alt="" src="../img/0011.webp" class="img-responsive" />
+
+						</div>
+						<div class="item active" ">
+															<img alt="" src=" ../img/0012.webp" class="img-responsive" />
+					</div>
+					<div class="item">
+						<img alt="" src="../img/0013.webp" class="img-responsive">
+
+					</div>
+				</div> <a class="left carousel-control" href="#carousel-149262" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a class="right carousel-control" href="#carousel-149262" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+
+			<div class="row clearfix">
+				<figure class="text-end" style="margin-top: 50px;">
+					<blockquote class="blockquote-reverse">
+						<p class="mb-0">我一直认为我做的工作就是在日常中提炼电影，然后在电影中去还原日常的工作。写作剧本、拍摄电影的过程就是发现生活，呈现生活和总结生活的过程，如何感知和捕捉日常中微妙诗意瞬间使之变成永恒的过程。</p>
+						<!-- 引用块-->
+					</blockquote>
+					<figcaption class="blockquote-reverse">
+						李睿珺 <cite title="Source Title">导演</cite>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="row clearfix">
+
+				<table class="table">
+					<h3 style="margin-top: 50px;">影片基本信息</h3>
+					<tbody>
+						<tr>
+							<td>影片名</td>
+							<td>隐入尘烟</td>
+						</tr>
+						<tr>
+							<td>主演</td>
+							<td>武仁林 / 海清 / 杨光锐 / 赵登平 / 王彩兰 / 曾建贵 / 武赟志 / 马占红 / 王翠兰 / 续彩霞 / 李生甫 / 张敏</td>
+						</tr>
+						<tr>
+							<td>编剧</td>
+							<td>李睿珺</td>
+						</tr>
+
+						<tr>
+							<td>片长</td>
+							<td>133 分钟</td>
+						</tr>
+						<tr>
+							<td>类型</td>
+							<td>剧情</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+			</div>
+			<br>
+			<h3>演职员</h3>
+			<br>
+			<div class="row clearfix">
+				<div class="col-md-4 column">
+
+					<div class="row clearfix">
+						<div class="col-md-8">
+							<img src="../img/liruijun.jpg" style="width:200px;height:200px ;" class="img-circle">
+						</div>
+						<div class="col-md-4">
+							<p style=" font-size: larger;margin-top:70px ;"><b>李睿珺</b></p>
+							<p>导演</p>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4 column">
+
+					<div class="row clearfix">
+						<div class="col-md-8">
+							<img src="../img/wurenlin.jpg" style="width:200px;height:200px ;" class="img-circle">
+						</div>
+						<div class="col-md-4">
+							<p style=" font-size: larger;margin-top:70px ;"><b>武仁林</b></p>
+							<p>饰 马有铁(老四)</p>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-md-4 column">
+
+					<div class="row clearfix">
+						<div class="col-md-8">
+							<img src="../img/haiqing.jpg" style="width:200px;height:200px ;" class="img-circle">
+						</div>
+						<div class="col-md-4">
+							<p style="font-size: larger;margin-top:70px ;"><b>海清</b></p>
+							<p>饰 曹贵英</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			</br>
+			</br>
+			<div id="footer">
+				<p>感谢大家努力学习，网页开发有你更精彩</p>
+			</div>
+		</div>
+	</body>
+</html>

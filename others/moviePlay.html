@@ -1,0 +1,477 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>42娱乐站</title>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0
+	}
+	body {
+		background:url(img/backgroundmain2.png);
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+		margin-left:50px;
+		margin-right:50px;
+	}
+	html{
+		
+		background：linear-gradient(#101745 20%,#0A293B 60%,#0C3C2C 80%);
+	}
+	#all {
+		width: 1036px;
+		margin: 0 auto;
+		margin-top: 25px
+	
+	}
+	.clear {
+		clear: both
+	}
+	/*上侧导航条*/
+	#head {
+		/*background:#0D1546;*/
+		height: 35px;
+		width:1600px
+	}
+	#head ul {
+		margin: 0 auto
+	}
+	#head ul li {
+		float: left;
+		padding: 0 39px 0 36px;
+		list-style: none;
+		line-height: 35px
+	}
+	#head ul li a {
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+		padding-left: 25px;
+		padding-right: 38px;
+		border-right: 3px solid #00DD5A;
+		font-family:"腾讯体";
+		letter-spacing: 2px;/*字间距*/
+	}
+	#head ul li a:hover {
+		color:#00DD5A;
+		text-decoration: underline;
+		
+		
+	}
+	#icon1{
+		width:25px;
+		height:25px;
+		margin-left:15px;
+		margin-bottom:-2px;
+	}
+	#icon2{
+		width:25px;
+		height:25px;
+		margin-left:-50px;
+		margin-bottom:-4px;
+	}
+	#icon3{
+		width:25px;
+		height:25px;
+		margin-left:-50px;
+		margin-bottom:-4px;
+	}
+	#icon4{
+		width:25px;
+		height:25px;
+		margin-left:-50px;
+		margin-bottom:-4px;
+	}
+	#icon5{
+		width:25px;
+		height:25px;
+		margin-left:-50px;
+		margin-bottom:-4px;
+	}
+	
+	/*logo等布局*/
+	#logo {
+		height:125px;
+		/*background-color:#0D1546;*/
+		
+	}
+	/*图标1*/
+	.topimg1{
+		float:left;
+		margin-top:17px;
+		margin-left:60px;
+		width:190px;
+		height:80px;
+	}
+	/*搜索框*/
+	.top1{
+		height:30px;
+		width:350px;
+		margin-left:70px;
+		margin-top:50px
+	}
+	/*搜索按钮*/
+	.top2{
+		background-color:#00DD5A;
+		color:white;
+		font-family:"微软雅黑体";
+		font-size:14px;
+		padding:8px 15px;
+		border:none;
+	}
+	/*图标2*/
+	.topimg2{
+		float:right;
+		margin-top:30px;
+		margin-right:130px;
+		width:70px;
+		height:70px;
+		bottom:0px;
+		position:relative
+	}
+	.topimg2:hover{/*鼠标悬停效果*/
+	    /*transform:scale(1.15,1.15);
+		transition:all 1s;*/
+		bottom:25px;
+		transition:all 2s;
+	}
+#maincontent h3 {
+	float:left;
+	color:white;
+	margin:15px 0 15px 30px;
+}
+#maincontent h4 {
+	float:left;
+	color:white;
+	margin:15px 0 15px 30px;
+}
+#maincontent h5 {
+	float:left;
+	color:white;
+	margin:18px 15px 15px 5px;
+}
+#maincontent h5 p {
+	float:right;
+	color:white;
+	margin:0px 8px 10px 700px;
+}
+#maincontent{
+	border-top: 1px solid white;
+	/*background:url(img/backgroundmain2.png);*/
+}
+/*导航图片*/
+.contertop{
+	width:180px;
+	height:35px;
+}
+	/*moviePlay电影播放*/
+	.moviePlay {
+		height:500px;
+		background-color: #141243
+	}
+	#buttonDiv {
+		width: 800px;
+		display: none;
+	}
+	#playPercent {
+		width: 800px;
+	}
+	#progress {
+		width: 800px;
+		height: 20px;
+		left: 0px;
+		background: #ccc;
+	}
+	#progressValue {
+		width: 0%;
+		height: 20px;
+		background: green;
+		cursor: default;
+	}
+	#showTime {
+		z-index: 2;
+		display: none;
+		position: absolute;
+		font-size: 10px;
+	}
+	
+	#hotmo {
+		float:right;
+		margin-right:-8px;
+		width:220px;
+		height:200px;
+		
+	}
+	#hotmo imge {
+		
+		
+	}
+	#recommend{
+		float:right;
+	
+		}
+	/*页脚*/
+	#footer {
+		height: 186px;
+		background:url(img/bgg.png);
+	}
+	#footer p {
+		text-align: center;
+		padding-top: 160px;
+		color: #141243
+	}
+</style>
+
+    <style>
+        #video {   
+            height: 500px;
+            background-color: black;
+        }
+    	
+        #mp4par {
+                    position: relative;
+                    width: 700px;
+                    height: 450px;
+                    background-color: black;
+                    float: left;
+                    overflow: hidden;
+                }
+                #mp4 {
+                    position: relative;
+                    width: 700px;
+                    height: 450px;
+                }
+                #controls {
+                    position: absolute;
+                    width: 700px;
+                    height: 75px;
+                    bottom: -75px;
+                    z-index: 10;
+                    background-color: rgba(255, 255, 255, 0.31);
+                    text-align: center;
+                    transition: all 0.3s ease-in;
+                }
+                #mp4par:hover #controls{
+                    bottom: 0;
+                }
+                #btntime {
+                    width: 700px;
+                    outline: none;
+                }
+                #btnsound {
+                    position: relative;
+                    top: 5px;
+                }
+                button {
+                    position: relative;
+                    width: 40px;
+                    height: 20px;
+                    /* border-radius: 50%; */
+                    outline: none;
+                    border-style: none;
+                    /* background: radial-gradient(#ffae9f, #ff2f39); */
+                    margin: 18px;
+                    color: #474747;
+                }
+                .iconfont {
+                    font-size: 24px;
+                    color: #474747;
+                }
+    </style>
+</head>
+
+<body>
+	<div id="all">
+	  <div id="top"> 
+	    <!-- 上侧导航条-->
+	    <div id="head">
+	      <div id="head">
+	        <ul>
+	          <li><img src="img/i1.png" id="icon1">
+	      		<a href="../index.html" >首页</a></li>
+	          <li><img src="img/i2.png" id="icon2">
+	      		<a href="./list.html">热门电影</a></li>
+	          <li><img src="img/i3.png" id="icon3">
+	      		<a href="./detail.html">电影详情</a></li>
+	          <li><img src="img/i4.png" id="icon4">
+	      		<a href="#" onMouseDown="alert('当前页就是电影播放页面')">影视播放</a></li>
+	          <li><img src="img/i5.png" id="icon5">
+	      		<a href="./register.html" style="border:hidden">登录注册</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	    <div class=" clear"></div>
+		<div id="logo">
+			<img src="img/42.jpg" class="topimg1">
+			<input type="text" class="top1">
+			<input type="button" value="搜索" class="top2">
+			<img src="img/movie.png" class="topimg2">					
+		</div>
+	    </div>
+	 <!-- 2、moviePlay电影播放-->
+	  <div class="moviePlay">
+	    <div style="margin-left:2px">
+	    	
+	    <aside id="hotmo">
+	      	<div style="margin-left:-15px">
+	      	<p style="color:#999;font-size:20px;margin-top:5px;margin-bottom:6px">同类电影</p>
+			
+	     	 <div id="recommend">
+	            <div>
+	              
+	               <figcaption style="color:#ccc" margin-left="-20px">战狼</figcaption>
+	              <p style="font-size:14px; color:#ccc" margin-left="-50px">惊险刺激</p>
+	            </div>
+	        </div>
+	        <figure> <img src="img\wolf2.png" alt="推荐电影" width="110" height="140" > </figure>
+	        <div class="clear"></div>
+	         <section id="recommend">
+	            <div>
+	              <figcaption style="color:#ccc">银河护卫队</figcaption>
+	              <p style="font-size:14px; color:#ccc">脑洞大开</p>
+	            </div>
+	        </section>
+	        <figure> <img src="img\GuardiansoftheGalaxy.png" alt="推荐电影" width="110" height="140"> </figure>
+	        <div class="clear"></div>
+	         <section id="recommend">
+	            <div>
+	            <figcaption style="color:#ccc">冰河世纪</figcaption>
+	              <p style="font-size:14px; color:#ccc">萌萌象大冒险</p>
+	            </div>
+	        </section>
+	        <figure> <img src="img\6.jpg" alt="推荐电影" width="110" height="140"> </figure>
+	        <div class="clear"></div>
+	        </div>
+			
+	    </aside>
+	
+        <video id="video" src="video.webm" width="800">您的浏览器不支持video元素</video>
+		
+        <div id="controls">
+            <input type="range" id="btntime" value="0" max="100"><br>
+            <span id="current_time" style='font-size: 12px;'>00:00:00</span>
+            <button id="btnstart" >播放</button>
+            <button id="btngo" >快进</button>
+            <button id="btnback" >快退</button>
+            <button id="btnmute" >静音</button>
+            <input type="range" id="btnsound" value="10" max="100">
+            <button id="btnbig">全屏</button>
+            <span id="totaltime" style='font-size: 12px;'>00:00:00</span>
+            <!-- <button><i class="iconfont">&#xe638;</i></button> -->
+        </div>
+		</div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var video = document.getElementById("video");
+    var btnstart = document.getElementById("btnstart");
+    var current_time=document.getElementById('current_time');
+    var btntime = document.getElementById("btntime");
+    var btngo = document.getElementById("btngo");
+    var btnback = document.getElementById("btnback");
+    var btnmute=document.getElementById("btnmute");
+    var btnsound=document.getElementById("btnsound");
+    var btnbig=document.getElementById("btnbig");
+    var totaltime=document.getElementById('totaltime');
+    //视频开始播放时执行
+    video.onplaying = function () {
+        //获取当前video的总时间
+        var allTime = video.duration;
+        var h=Math.floor(allTime/3600);
+        var m=Math.floor(allTime%3600/60);
+        var s=Math.floor(allTime%60);
+        h=h>=10?h:'0'+h;
+        m=m>=10?m:'0'+m;
+        s=s>=10?s:'0'+s;
+        totaltime.innerHTML=h+':'+m+':'+s;//allTime.toString();
+    };
+    //视频播放位置发生变化时开始执行
+    video.ontimeupdate = function () {
+        btntime.value =100*this.currentTime/this.duration;///this.totaltime;
+        var time=this.currentTime;
+        var h=Math.floor(time/3600);
+        var m=Math.floor(time%3600/60);
+        var s=Math.floor(time%60);
+        h=h>=10?h:'0'+h;
+        m=m>=10?m:'0'+m;
+        s=s>=10?s:'0'+s;
+        current_time.innerHTML=h+':'+m+':'+s;
+    };
+
+    //播放进度条的事件
+    btntime.addEventListener("mousedown",function(){
+        this.onmousemove=function(){
+            video.currentTime=this.value*video.duration/100;
+        }
+        this.onmouseup=function(){
+            this.onmousemove=null;
+            this.onmouseup=null;
+        }
+    });
+
+    //快进的点击事件
+    btngo.addEventListener("click", function () {
+        btnstart.innerHTML = "播放";
+        video.pause();
+        time = setInterval(function () {
+            video.currentTime += 5;
+        }, 1000);
+    });
+    //快退的点击事件
+    btnback.addEventListener("click", function () {
+        btnstart.innerHTML = "播放";
+        video.pause();
+        time = setInterval(function () {
+            video.currentTime -= 2;
+            if (video.currentTime <= 0) {
+                video.play();
+                clearInterval(time);
+            }
+        }, 1000);
+    });
+    //静音的点击事件
+    btnmute.addEventListener("click",function(){
+        video.muted=!video.muted;
+    });
+    //音量进度条的事件
+    btnsound.addEventListener("mousedown",function(){
+        this.onmousemove=function(){
+            video.volume=this.value/100;
+        }
+        this.onmouseup=function(){
+            this.onmousemove=null;
+            this.onmouseup=null;
+        }
+    });
+    //全屏的点击事件
+    btnbig.addEventListener("click",function(){
+        if (video.webkitRequestFullScreen) {
+            video.webkitRequestFullScreen();
+        }
+        else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen();
+        }
+        else if (video.msRequestFullScreen) {
+            video.msRequestFullScreen();
+        }
+        else if (video.RequestFullScreen) {
+            video.RequestFullScreen();
+        }
+    });
+    //播放的点击事件
+    btnstart.addEventListener("click", function () {
+        if (this.innerHTML == "播放") {
+            video.play();
+            this.innerHTML = "暂停";
+        }
+        else {
+            video.pause();
+            this.innerHTML = "播放";
+        }
+        clearInterval(time);
+    })
+</script>
+</body>
+</html>

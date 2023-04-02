@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>register页</title>
+<!--这里引入CSS文件-->
+<link rel="stylesheet" href="../css/register.css">
+</head>
+
+<!--<h1><a href="../index.html" >任务五：登录注册</a></h1>   最后再去搞这里-->
+
+
+<script src="https://kit.fontawesome.com/5e71364062.js" crossorigin="anonymous"></script>
+<body>
+	<div class="container">
+		<div class="form-container">
+	        <div class="signin-signup">
+				<div class="signin">
+	        <form class="sign-in-form" name="form1">
+	            <h2 class="title1">登录</h2>
+				<div class="inputarea">
+					<i class="fa-solid fa-user"></i>
+					<input type="text" name="user" placeholder="用户名" required>
+				</div>
+				<div class="inputarea">
+					<i class="fa-solid fa-lock"></i>
+					<input type="password" name="pw" placeholder="密码" required>
+					</div>
+					<input type="button" value="登录" class="btn btn1" onclick="login()">
+					<p class="apptext">使用第三方账号登录</p>
+	            <div class="social-container">
+					<div class="social-app">
+					<i class="fa-brands fa-qq"></i>
+					</div>
+					<div class="social-app">
+	                <i class="fa-brands fa-weixin"></i>
+					</div>
+					<div class="social-app">
+					<i class="fa-brands fa-weibo"></i>
+					</div>
+	            </div>
+				
+				</form>
+				</div>
+				<div class="signup">
+				<form action="#" class="sign-up-form" name="form2" οnsubmit="return reg();" method="get">
+				    <h2 class="title2">注册</h2>
+					<div class="inputarea">
+						<i class="fa-solid fa-user"></i>
+						<input type="text" name="user" class="username" placeholder="用户名" required>
+					</div>
+					<div class="inputarea">
+						<i class="fa-solid fa-lock"></i>
+						<input type="password" name="pw" class="password" placeholder="密码" required>
+						</div>
+						<div class="inputarea">
+							<i class="fa-solid fa-envelope"></i>
+							<input type="email" placeholder="邮箱" name="email" required>
+							</div>
+						<input type="button" value="注册" class="btn btn2"  onclick="reg()">
+						</form>
+						</div>
+				      </div>
+				   </div>
+				   
+				<div class="panel-container">
+					<div class="panel left-panel">
+						<div class="content">
+							<h3>欢迎来到42影视站</h3>
+							<p>不负好时光</p>
+							<button class="btnn trans" id="sign-up-btn">注册 </button>
+						</div>
+					</div>
+				
+				<div class="panel right-panel">
+						<div class="content">
+							<h3>已经加入了？</h3>
+							<p>那就尽情享受吧！</p>
+							<button class="btnn trans" id="sign-in-btn">登录 </button>
+				        </div>
+				  </div>
+			  </div>
+		  </div>
+</body>
+<script src="../js/register.js"></script>
+<script language="JavaScript">
+	function login(){
+	   var us1=localStorage.getItem("username");
+	   var pw1=localStorage.getItem("password");
+	   var us2=document.form1.user.value;
+	   var pw2=document.form1.pw.value;
+	  if(us1==us2||pw1==pw2){
+			alert("登录成功");
+			window.location.href="../index.html";
+			/*return false;*/
+	   }
+	   
+	   else
+	   {
+		   alert("登录失败");
+		   return false;
+		   /*  return true;*/
+		   /*  self.close();*/
+		}
+	   
+	}
+	function reg(){
+	    var username=document.form2.user.value;
+		var password=document.form2.pw.value;
+		var email=document.form2.email.value;
+	    localStorage.setItem("username",username);
+	    localStorage.setItem("password",password);
+		localStorage.setItem("email",email);
+	  /* if(email!='')*/
+		if(username==""||password==""||email=="")
+		   {
+			   alert("注册失败");
+		   return false;
+		   }
+		   else{
+	   alert("注册成功");
+	  window.location.href="../index.html";
+	   return true;
+	   }
+	  
+	  /* self.close();*/
+	}
+	/*function jump(){
+	       window.location.href="../index.html";
+	     }*/
+</script>
+</html>

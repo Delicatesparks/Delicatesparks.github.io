@@ -1,0 +1,511 @@
+<!doctype html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>42娱乐站</title>
+	<style type="text/css">
+		/*整体的美化*/	
+
+		/*总体*/
+		
+		* {
+			margin: 0;
+			padding: 0
+		}
+		body {
+			background:url(img/backgroundmain2.png);
+			background-size:100% 100%;
+			background-repeat:no-repeat;
+			margin-left:50px;
+			margin-right:50px;
+		}
+		html{
+			
+			background：linear-gradient(#101745 20%,#0A293B 60%,#0C3C2C 80%);
+		}
+		#all {
+			width: 1036px;
+			margin: 0 auto;
+			margin-top: 25px
+		
+		}
+		.clear {
+			clear: both
+		}
+		/*************************************导航条部分*************************************/	
+		#head {
+			/*background:#0D1546;*/
+			height: 35px;
+			width:1600px
+		}
+		#head ul {
+			margin: 0 auto
+		}
+		#head ul li {
+			float: left;
+			padding: 0 39px 0 36px;
+			list-style: none;
+			line-height: 35px
+		}
+		#head ul li a {
+			text-decoration: none;
+			color: white;
+			font-size: 20px;
+			padding-left: 25px;
+			padding-right: 38px;
+			border-right: 3px solid #00DD5A;
+			font-family:"腾讯体";
+			letter-spacing: 2px;/*字间距*/
+		}
+		#head ul li a:hover {
+			color:#00DD5A;
+			text-decoration: underline;
+			
+			
+		}
+		#icon1{
+			width:25px;
+			height:25px;
+			margin-left:15px;
+			margin-bottom:-2px;
+		}
+		#icon2{
+			width:25px;
+			height:25px;
+			margin-left:-50px;
+			margin-bottom:-4px;
+		}
+		#icon3{
+			width:25px;
+			height:25px;
+			margin-left:-50px;
+			margin-bottom:-4px;
+		}
+		#icon4{
+			width:25px;
+			height:25px;
+			margin-left:-50px;
+			margin-bottom:-4px;
+		}
+		#icon5{
+			width:25px;
+			height:25px;
+			margin-left:-50px;
+			margin-bottom:-4px;
+		}
+		
+		/*logo等布局*/
+		#logo {
+			height:125px;
+			/*background-color:#0D1546;*/
+			
+		}
+		/*图标1*/
+		.topimg1{
+			float:left;
+			margin-top:17px;
+			margin-left:60px;
+			width:190px;
+			height:80px;
+		}
+		/*搜索框*/
+		.top1{
+			height:30px;
+			width:350px;
+			margin-left:70px;
+			margin-top:50px
+		}
+		/*搜索按钮*/
+		.top2{
+			background-color:#00DD5A;
+			color:white;
+			font-family:"微软雅黑体";
+			font-size:14px;
+			padding:8px 15px;
+			border:none;
+		}
+		/*图标2*/
+		.topimg2{
+			float:right;
+			margin-top:30px;
+			margin-right:130px;
+			width:70px;
+			height:70px;
+			bottom:0px;
+			position:relative
+		}
+		.topimg2:hover{/*鼠标悬停效果*/
+		    /*transform:scale(1.15,1.15);
+			transition:all 1s;*/
+			bottom:25px;
+			transition:all 2s;
+		}
+		#maincontent h3 {
+			float:left;
+			color:white;
+			margin:15px 0 15px 30px;
+		}
+		#maincontent h4 {
+			float:left;
+			color:white;
+			margin:15px 0 15px 30px;
+		}
+		#maincontent h5 {
+			float:left;
+			color:white;
+			margin:18px 15px 15px 5px;
+		}
+		#maincontent h5 p {
+			float:right;
+			color:white;
+			margin:0px 8px 10px 700px;
+		}
+		#maincontent{
+			border-top: 1px solid white;
+			/*background:url(img/backgroundmain2.png);*/
+		}
+		#contenthead{
+		 	background-color: #FFF; 
+			height:510px;
+			background-image: url(img/xian-1.png);
+			background:repeat-x;
+			padding-top:5px;
+		}
+		/*center-bottom*/
+		#center-bottom{
+			height:1050px;
+			background-color:#000000;
+		}
+		#center-bottom-right-head {
+			margin-left:-8px;
+		}
+		#bottom-right{
+			width:270px;
+			height:370px;
+			border:1px dotted #00DD5A;
+			float:right;
+			margin-right:17px;
+			margin-top:-10px;
+		}	
+		#bottom-right li{
+			list-style:none;
+			margin-top:10px;
+		}
+		#bottom-right span{
+			font-size:12px;
+			border:1px solid #CCC;
+			padding:2px 4px;
+			color:#CCC;
+		}
+		#bottom-right span.dif{
+			border:none;
+			background-color:#00DD5A;
+			color:#FFF;
+		}	
+		#bottom-right li a{
+			text-decoration:none;
+			font-size:12px;
+			color:#ffffff;
+			margin-left:10px;
+		}
+		#bottom-right ul{
+			margin-left:-20px;
+			margin-top:21px;
+		}
+		#bottom-right img{
+			margin-right:15px;
+			margin-top:20px;
+			padding:1px;
+			border:4px solid #005500;
+			float:left;
+			margin-left:20px;
+		}
+		#bottom-right li p{
+			font-size:14px;
+			color:#00DD5A;
+		}
+		#bottom-right li a:hover{
+			color:#C00;
+			}
+		/*center-left*/	
+		#center-bottom-left{
+			width:711px;
+			height:920px;
+			/* border:1px solid #CCC; */
+			margin-left:20px;
+			margin-top:-10px;
+		}
+		#center-bottom-left li{
+			list-style:none;
+		}
+		#center-bottom-left li span{
+			float:left;
+			font-size:24px;
+			color:#ffffff;
+			/*background-image: linear-gradient(to right,#03A74F, #092636);/*渐变色*/
+			margin-left:10px;
+		}
+		#center-bottom-left li h3 a{
+			display: block;
+			margin-left:7px;
+			text-decoration:none;
+			font-size:17px;
+			color:#00DD5A;
+			margin-top:-5px;
+			
+		}
+#center-bottom-left li h3 a:hover{
+	color:#C00;
+}
+		#center-bottom-left  p{
+			margin-left:18px;
+			padding-top:50px;
+			
+			font-size:16px;
+			color:#999;
+			margin-top: 10px 
+			
+		}
+		#center-bottom-left ul img.one{
+			float:left;
+			clear:left;
+		}
+		#center-bottom-left ul img.two{
+			margin-top:30px;
+			float:left;
+			clear:left;
+		}
+		#center-bottom-left ul img.three{
+			margin-top:30px;
+			float:left;
+			clear:left;
+		}
+		#center-bottom-left li.three{
+			margin-top:70px;
+		}	
+		#center-bottom-left li.one{
+			margin-top:50px;
+		}	
+		#center-bottom-left li.two{
+			margin-top:57px;
+		}
+		#center-bottom-left .fall a{
+			text-decoration:none;
+			font-size:12px;
+			color:#ffffff;
+		}
+		#center-bottom-left .fall li{
+			float:left;
+			padding:4px 8px;
+			border:1px solid #CCC;
+		}	
+		#center-bottom-left .fall{
+			margin-top:70px;
+			margin-left:50px;
+		}	
+		#center-bottom-left .fall li:hover{
+			background-color:#00DD5A;
+		}
+		
+
+
+		/*影片排行部分*/
+		#paihang{
+			margin-top:60px;
+		}
+		 .moduleTitle
+		 {
+         margin-top:20px
+		margin-bottom:11px
+		margin-left:5px
+		margin-right:5px
+		 padding-left:0;
+		 background:none;
+		 color:#00dd5a;
+		 font-size:20px;
+		 }
+		.pink{
+		float:left;
+		width:3px;
+		height:18px;
+		background:#00DD5A;
+		margin-right:5px;
+		} 
+		.list a,.picNewsDisplay .picNewsRightTitle,.picNewsDisplay .picTitle{
+		padding:0 10px;
+		width:95%;
+		display:block;
+		overflow:hidden;
+		height:36px;
+		border-bottom:dotted 1px #ffffff;
+		color:#00dd5a;
+		line-height:36px
+		}
+		.list a:active,.picNewsDisplay .picNewsRightTitle:active,.picNewsDisplay .picTitle:active{
+		background:#c4c4c4
+		}
+		.list a:visited{
+		color:#00DD5A;
+		}
+		.list a span{
+		color:#ffffff
+		}
+		.link{
+		height:40px;
+		float:right
+		}
+		.link a{
+		padding:13px 8px 12px 8px;
+		font-size:16px;
+		color:#00dd5a;
+		line-height:40px;
+		border-left:solid 1px #cbcbcb
+		}
+		.link a:active{
+		background:#cbcbcb
+		}
+		.link a:visited{
+		color:#00DD5A;
+		} 
+ 
+
+		/*页脚部分*/
+		#footer{
+			margin-top:-20px;
+			width:1036px;
+			height:183px;
+			/* background-image:url(img/footer.jpg); */
+		}	
+		#footer p{
+			padding-top:162px;
+			text-align:center;
+			font-size:12px;
+			color:#ffffff;
+		}	
+	</style>
+</head>
+
+<body>
+	<div id="all">
+		<div id="top"> 
+			<!-- 1、导航条-->
+			<div id="head">
+				<ul>
+				  <li><img src="img/i1.png" id="icon1">
+								<a href="../index.html" >首页</a></li>
+				  <li><img src="img/i2.png" id="icon2">
+								<a href="#" onMouseDown="alert('当前页就是热门电影页面')">热门电影</a></li>
+				  <li><img src="img/i3.png" id="icon3">
+								<a href="./detail.html">电影详情</a></li>
+				  <li><img src="img/i4.png" id="icon4">
+								<a href="./moviePlay.html">影视播放</a></li>
+				  <li><img src="img/i5.png" id="icon5">
+								<a href="./register.html" style="border:hidden">登录注册</a></li>
+				</ul>
+			</div>
+			<div class=" clear"></div>
+			<!-- 2、logo或者头图-->
+			<div id="logo"> <img src="img/42.jpg" class="topimg1">
+				<input type="text" class="top1">
+				<input type="button" value="搜索" class="top2">
+				<img src="img/movie.png" class="topimg2"> </div>
+			</div>
+					<!-- 最新内容更新 -->
+					<div id="maincontent">
+						<h4>最新更新</h4>
+						<h5>
+							》》》》
+							<p>在线人数100人</p>
+						</h5>
+						<br> 
+			<!-- <div id="center-bottom">
+				<div id="center-bottom-right-head">
+					<img src="img/center-bottom-head.png" width="1051" height="48" />
+				</div> -->
+				
+				 <div id="bottom-right">
+					<img src="img/yinruchengyan.jpg" width="61" height="84" />
+					<ul>
+						<li><span class="dif">01</span><a href="detail.html">隐入尘烟</a><p>主演：海青、武仁林</p></li>
+						<div style="margin-left: 44px">
+							<li><span class="dif">02</span><a href="detail.html">战狼2</a></li>
+							<li><span class="dif">03</span><a href="#">金刚：骷髅岛</a></li>
+							<li><span class="dif">04</span><a href="#">星际特工：千星之城</a></li>
+							<li><span class="dif">05</span><a href="#">速度与激情8</a></li>
+							<li><span>06</span><a href="#">星际穿越</a></li>
+							<li><span>07</span><a href="#">三生三世十里桃花</a></li>
+							<li><span>08</span><a href="#">悟空传</a></li>
+							<li><span>09</span><a href="#">重庆森林</a></li>
+							<li><span>10</span><a href="#">建军大业 </a></li>
+						</div>
+					</ul>
+				</div> 
+				<!-- 左侧热门电影 -->
+				<div id="center-bottom-left">
+					<ul>
+						<a href="detail.html"><img class="one" src="img/yinruchengyan.jpg" width="122" height="160" /></a>
+						<li class="three"><span>[电影专栏]</span>
+							<h3><a href="detail.html">【剧情】隐入尘烟</a></h3>
+					
+							<p>该片上映于 2022-07-08，隐入尘烟
+讲述了在甘肃张掖农村，一对农村夫妇艰辛而温馨的一段生命旅程。
+两个被家庭抛弃的中年底层农民，从一开始结婚时的陌生，
+到日复一日的劳作生活中的熟悉，相知相守，展现了一对悲苦的农村夫妻对美好生活的渴望与向往。</p>
+						</li>
+							<a href="#"><img class="two" src="img/zhunihaoyun.jpg" width="122" height="160" /></a>
+							<li class="one"><span>[动画专栏]</span>
+								<h3><a href="#">【治愈】祝你好运</a></h3>
+								
+								<p>该片上映于 2022-08-05，是由佩吉·霍姆斯执导，Skydance动画公司制作的长片动画,讲述了山姆从小在寄养家庭长大，她希望能为一个同为寄养儿童的伙伴搞到一些好运气，于是她就找到了能够操纵人类运气的神奇生物，其中包括一只由西蒙·佩吉配音的黑猫和一条由简·方达配音的龙</p>
+							</li>
+								<a href="#"><img class="three" src="img/11.jpg" width="127" height="160" /></a>
+								<li class="two"><span>[惊悚专栏]</span>
+									<h3><a href="#">【惊悚】沉默的羊羔 </a></h3>
+					
+									<p>该片上映于1991-2-14，《沉默的羔羊》是一部改编自托马斯·哈里斯同名小说的惊悚电影。该片讲述了实习特工克拉丽斯为了追寻杀人狂野牛比尔的线索，前往一所监狱访问精神病专家汉尼拔博士，汉尼拔给克拉丽斯提供了一些线索，最终克拉丽斯找到了野牛比尔，并将其击毙的故事。</p>
+								</li>
+								</ul>
+								
+								<!-- 电影排行榜 -->
+								<div id="paihang">
+									<div class="moduleTitle">
+										<a href="#">
+											<div class="titleLeft"><div class="pink"></div>影片排行</div></a>
+											<div class="link">
+												<a href="#">视频排行</a>
+												<a href="#">票房排行</a>
+											</div>
+										</div>
+								
+										<div class="screem640">
+											<div class="moduleCont">
+												<div class="list">
+													<a href="detail.html"><span>[1] </span>壮志凌云2：独行侠</a><a href="#"><span>[2] </span>侏罗纪世界3</a><a href="#"><span>[3] </span>奇异博士2：疯狂的多元宇宙</a><a href="#"><span>[4] </span>小黄人大眼萌：神偷奶爸前传</a><a href="#"><span>[5] </span>新蝙蝠侠</a>                    </div>
+												</div>
+												<div class="moduleCont">
+													<div class="list">
+														<a href="#"><span>[6] </span>雷神4：爱与雷霆</a><a href="#"><span>[7] </span>长津湖之水门桥</a><a href="#"><span>[8] </span>神奇动物3：邓布利多之谜</a><a href="#"><span>[9] </span>刺猬索尼克2</a><a href="#"><span>[10] </span>神秘海域</a>                    </div>
+													</div>
+												</div>
+											</div> 
+											<ul class="fall">
+												<li><a href="#">首页</a></li>
+												<li><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><a href="#">4</a></li>
+												<li><a href="#">5</a></li>
+												<li><a href="#">6</a></li>
+												<li><a href="#">7</a></li>
+												<li><a href="#">8</a></li>
+												<li><a href="#">下一页</a></li>
+												<li><a href="#">最末页</a></li>
+											</ul>
+										</div>
+									</div>
+									<!-- 4、页脚-->
+									<div id="footer">
+										<p>感谢大家努力学习，网页开发有你更精彩</p>
+									</div>
+								</div>
+							</body>
+							</html>

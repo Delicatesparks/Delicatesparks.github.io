@@ -1,0 +1,516 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>42娱乐站</title>
+<style type="text/css">
+/*总体*/
+
+* {
+	margin: 0;
+	padding: 0
+}
+body {
+	background:url(img/backgroundmain2.png);
+	background-size:100% 100%;
+	background-repeat:no-repeat;
+	margin-left:50px;
+	margin-right:50px;
+}
+html{
+	
+	background：linear-gradient(#101745 20%,#0A293B 60%,#0C3C2C 80%);
+}
+#all {
+	width: 1036px;
+	margin: 0 auto;
+	margin-top: 25px
+
+}
+.clear {
+	clear: both
+}
+/*上侧导航条*/
+#head {
+	/*background:#0D1546;*/
+	height: 35px;
+	width:1600px
+}
+#head ul {
+	margin: 0 auto
+}
+#head ul li {
+	float: left;
+	padding: 0 39px 0 36px;
+	list-style: none;
+	line-height: 35px
+}
+#head ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	padding-left: 25px;
+	padding-right: 38px;
+	border-right: 3px solid #00DD5A;
+	font-family:"腾讯体";
+	letter-spacing: 2px;/*字间距*/
+}
+#head ul li a:hover {
+	color:#00DD5A;
+	text-decoration: underline;
+	
+	
+}
+#icon1{
+	width:25px;
+	height:25px;
+	margin-left:15px;
+	margin-bottom:-2px;
+}
+#icon2{
+	width:25px;
+	height:25px;
+	margin-left:-50px;
+	margin-bottom:-4px;
+}
+#icon3{
+	width:25px;
+	height:25px;
+	margin-left:-50px;
+	margin-bottom:-4px;
+}
+#icon4{
+	width:25px;
+	height:25px;
+	margin-left:-50px;
+	margin-bottom:-4px;
+}
+#icon5{
+	width:25px;
+	height:25px;
+	margin-left:-50px;
+	margin-bottom:-4px;
+}
+
+/*logo等布局*/
+#logo {
+	height:125px;
+	background-color/*:#0D1546;*/
+}
+/*图标1*/
+.topimg1{
+	float:left;
+	margin-top:17px;
+	margin-left:60px;
+	width:190px;
+	height:80px;
+}
+/*搜索框*/
+.top1{
+	height:30px;
+	width:350px;
+	margin-left:70px;
+	margin-top:50px
+}
+/*搜索按钮*/
+.top2{
+	background-color:#00DD5A;
+	color:white;
+	font-family:"微软雅黑体";
+	font-size:14px;
+	padding:9px 15px;
+	border: none;
+}
+/*图标2*/
+.topimg2{
+	float:right;
+	margin-top:30px;
+	margin-right:130px;
+	width:70px;
+	height:70px;
+}
+
+#maincontent h3 {
+	float:left;
+	color:white;
+	margin:15px 0 10px 30px;
+}
+#maincontent h4 {
+	float:left;
+	color:white;
+	margin:15px 0 10px 30px;
+}
+#maincontent h5 {
+	float:left;
+	color:white;
+	margin:18px 15px 10px 5px;
+}
+#maincontent h5 p {
+	float:right;
+	color:white;
+	margin:0px 8px 10px 690px;
+}
+#maincontent{
+	border-top: 1px solid white;
+	/*background:url(img/backgroundmain2.png);*/
+}
+/*#contenthead{
+	background-color: #FFF;
+	height:510px;
+	background-image: url(img/xian-1.png);
+	background:repeat-x;
+	padding-top:5px;
+}*/
+/*导航图片*/
+.contertop{
+	width:180px;
+	height:35px;
+}
+#contenthead{
+	margin-top:18px;
+}
+/*#headright{ 
+	float:right;
+	margin-top:4px;
+	margin-right:10px
+	}
+#headright li{ 
+	float:left;
+	list-style:none;
+	padding:3px 8px;
+	border:1px solid white;
+	}
+#headright li a{ 
+	color:white;
+	font-size:12px;
+	text-decoration:none;
+	}*/
+/*右侧导航*/
+#headright ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;/*溢出隐藏*/
+    background-color:#092636;
+	margin-left:180px;
+	margin-top:-39px;
+	width:860px;
+}
+ 
+#headright li {
+	margin-left:5px;
+    float: left;
+}
+ 
+#headright li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+	font-size:15px;
+	font-family:"腾讯体";
+	
+}
+ 
+/*鼠标移动到选项上修改背景颜色 */
+#headright li a:hover {
+    background-color: #03A74F;
+	width:70px
+	margin-left:-20px;
+}
+/* #headleft{
+	width:150px;
+	height:410px;
+	border:1px solid white;
+	margin:8px 0 0 2px
+	}
+#headleft li{
+	padding-top:10px;
+	padding-bottom:10px;
+	list-style:none;
+	border-bottom:1px solid white;
+	}
+#headleft li a{
+	text-decoration:none;
+	font-family:"微软雅黑体";
+	font-size:12px;
+	color:white;
+	margin-left:38px;
+	margin-top:10px;
+	padding-left:20px;
+	background-image:url(img/button-1.png);
+	background-repeat:no-repeat
+	}
+*/
+/*左侧导航*/
+#headleft ul{
+	list-style-type:none;
+	margin:0;
+	width:160px;
+	background-image: linear-gradient(to right,rgba(3,162,78,0.6), rgba(9,43,55,0.2));/*渐变色*/
+	margin-top:7px;
+	
+}
+#headleft li a{
+	display:block;/*块元素链接让整体变为可点击链接区域*/
+	color:white;
+	padding:9px 19px;
+	text-decoration:none;
+	font-family:"微软雅黑";
+	letter-spacing: 3px;/*字间距*/
+	font-size:17px;
+	width:110px;
+	height:21px;
+}
+/*鼠标移动到选项卡变颜色、变大*/
+#headleft li a:hover{
+	background-color:#092636;
+	color:white;
+	transform:scale(1.15,1.15);
+}
+
+/*电影列表*/
+#hotmovie ul li a img { /*海报图片*/
+	width:120px;
+	height:170px;
+	padding:2px;
+	border:1px solid white;
+	margin-right:10px;
+	margin-left:10px;
+	margin-top:20px;
+	margin-bottom:10px;
+}
+.movieone{
+	margin-top:-460px;
+	margin-left:125px;
+}
+.movietwo{
+	margin-left:125px;
+}
+#hotmovie{
+	float:right;
+	margin-right:-8px;
+	width:1000px;
+	height:200px;
+}
+#hotmovie li{
+	float:left;
+	list-style:none;/*去除原点*/
+	position:relative;/*相对于自己定位*/
+	bottom:0px;
+    background-color:rgba(5,5,3,0.4);/*透明度调整*/
+	width:145px;
+	height:232px;
+	
+}
+#hotmovie li:hover{ 
+	transform:scale(1.15,1.15);/*动态放大*/
+	transition:all 1s;
+	
+	}
+
+#hotmovie li p { 
+	font-size:14px;
+	color:white;
+	text-align:center;
+    font-family:"微软雅黑";
+	margin-top:-5px;
+	padding-bottom:12px;
+	}
+#hotmovie li p a{
+	color:white;
+	text-decoration: none;
+}
+/*跑马灯样式*/
+#container {
+			width: 960px;
+			height: 335px;
+			overflow: hidden;
+			height:100%;
+			margin-left:37px;
+			margin-top:15px;
+			}
+#mengban1{
+				position:absolute;
+				width:250px;
+				height:335px;
+				background-image: linear-gradient(to right,#0F193D,rgba(5,5,3,0));
+				
+			}
+#mengban2{
+				position: relative;
+				width:250px;
+				height:335px;
+				background-image: linear-gradient(to right,rgba(5,5,3,0),#0D3632);
+				margin-left:710px;
+			}
+#photo  {
+			width: 3840px;
+			animation: switch 9s ease-out infinite;
+		}
+			 
+#photo img {
+			float: left;
+			width: 960px;
+			height: 335px;
+			}
+			 
+@keyframes switch {
+	0%, 25% {
+		margin-left: 0;
+	}
+	30%, 60% {
+		margin-left: -960px;
+	}
+	65%, 90% {
+		margin-left: -1920px;
+	}
+	95%, 100% {
+		margin-left: -2880px;
+	}
+}
+</style>
+</head>
+
+<body>
+	<div id="all">
+	  <div id="top"> 
+	    <!-- 上侧导航条-->
+	    <div id="head">
+	      <ul>
+	        <li><img src="img/i1.png" id="icon1">
+				<a href="../index.html" style="border-left:none" >首页</a></li>
+	        <li><img src="img/i2.png" id="icon2">
+				<a href="others/list.html">热门电影</a></li>
+	        <li><img src="img/i3.png" id="icon3">
+				<a href="others/detail.html">电影详情</a></li>
+	        <li><img src="img/i4.png" id="icon4">
+				<a href="others/moviePlay.html">影视播放</a></li>
+	        <li><img src="img/i5.png" id="icon5">
+				<a href="others/register.html" style="border:hidden">登录注册</a></li>
+	      </ul>
+	    </div>
+	    <div class=" clear"></div>
+		<div id="logo">
+			<img src="img/42.jpg" class="topimg1">
+			<input type="text" class="top1">
+			<input type="button" value="搜索" class="top2">
+			<img src="img/movie.png" class="topimg2">
+	    </div>
+	    </div>
+		<!--主要内容部分-->
+		<div id="maincontent">
+			<h4>站长公告：</h4>
+			<h5>
+				欢迎来到42娱乐站
+				<p>在线人数99人</p>
+			</h5>
+			<br>
+			<!--跑马灯-->
+			<div id="container">
+				    <div id="photo">
+				        <img src="img/p11.jpg" />
+				        <img src="img/p22.jpg" />
+				        <img src="img/p33.jpg" />
+						<img src="img/p111.jpg" />
+				    </div>
+					<div id="mengban1" >
+					</div>
+					<div id="mengban2" >
+					</div>
+			</div>
+			<div id="contenthead">
+				<img src="img/yule.png" class="contertop">
+				<div id="headright">
+					<ul>
+						<li><a href="../index.html" >猜你喜欢</a></li>
+						<li><a href="./serial.html">电视剧集</a></li>
+						<li><a href="#" onMouseDown="alert('当前页面就是电影页面哦~')">电影专栏</a></li>
+						<li><a href="xxx">动画专栏</a></li>
+						<li><a href="xxx">综艺节目</a></li>
+						<li><a href="xxx">高清剧集</a></li>
+						<li><a href="xxx">体育赛事</a></li>
+						<li><a href="xxx">漫画播报</a></li>
+						<li><a href="xxx">教学视频</a></li>
+						<li><a href="xxx">经典剧集</a></li>
+					</ul>
+				</div>
+			</div>
+			<!--第二列左侧导航-->
+			<div id="headleft">
+				<ul>
+					<li><a href="./serial.html">电视剧集</a></li>
+					<li><a href="#" onMouseDown="alert('当前页面就是电影页面哦~')">电影专栏</a></li>
+					<li><a href="xxx">动画专栏</a></li>
+					<li><a href="xxx">综艺节目</a></li>
+					<li><a href="xxx">高清剧集</a></li>
+					<li><a href="xxx">体育赛事</a></li>
+					<li><a href="xxx">漫画播报</a></li>
+					<li><a href="xxx">校园自拍</a></li>
+					<li><a href="xxx">休闲游记</a></li>
+					<li><a href="xxx">有声读物</a></li>
+					<li><a href="xxx">教学视频</a></li>
+					<li><a href="xxx">经典剧集</a></li>
+				</ul>
+			</div>
+			<!--热门电影部分-->
+			<div id="hotmovie">
+				<ul class="movieone">
+					<li>
+						<a href="xxx"><img src="img/m1.jpg"></image></a>
+						<p><a href="xxx">神探大战</a></p>
+					</li>
+				    <li>
+				    	<a href="xxx"><img src="img/m2.jpg"></image></a>
+				    	<p><a href="xxx">人生大事</a></p>
+				    </li>
+					<li>
+						<a href="xxx"><img src="img/m4.jpg"></image></a>
+						<p><a href="xxx">猎屠</a></p>
+					</li>
+					<li>
+						<a href="xxx"><img src="img/m5.jpg"></image></a>
+						<p><a href="xxx">遇见你</a></p>
+					</li>
+					<li>
+						<a href="xxx"><img src="img/m6.jpg"></image></a>
+						<p><a href="xxx">外太空的莫扎特</a></p>
+					</li>
+					<li>
+						<a href="xxx"><img src="img/m7.jpg"></image></a>
+						<p><a href="xxx">狙击手</a></p>
+					</li>
+				</ul>
+				<ul class="movietwo">
+					<li>
+						<a href="xxx"><img src="img/m8.jpg"></image></a>
+						<p><a href="xxx">隐入尘烟</a></p>
+					</li>
+					<li>
+						<a href="xxx"><img src="img/m13.jpg"></image></a>
+						<p><a href="xxx">漫长的告白</a></p>
+					</li>
+					<li>
+						<a href="xxx"><img src="img/m10.jpg"></image></a>
+						<p><a href="xxx">坏蛋联盟</a></p>
+					</li>
+					<li>
+						<a href="xxx"><img src="img/m11.jpg"></image></a>
+						<p><a href="xxx">独行月球</a></p>
+					</li>
+					<li>
+						<a href="xxx"><img src="img/m12.jpg"></image></a>
+						<p><a href="xxx">断桥</a></p>
+					</li>
+					<li>
+						<a href="xxx"><img src="img/m3.jpg"></image></a>
+						<p><a href="xxx">侏罗纪世界</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	 
+</body>
+</html>
